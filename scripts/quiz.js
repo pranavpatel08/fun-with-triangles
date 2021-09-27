@@ -7,6 +7,7 @@ const correctAnswers = ['90°', 'right angled', '120°', 'no', 'obtuse'];
 function calculateScore(e) {
 	e.preventDefault();
 	const data = new FormData(quizForm);
+	console.log(data.values);
 	let index = 0,
 		score = 0;
 	for (let entry of data.values()) {
