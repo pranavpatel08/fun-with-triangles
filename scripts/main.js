@@ -5,7 +5,6 @@ const isTriangleOutput = document.querySelector('#is-triangle-output');
 function calculateSumOfAngles() {
 	const sumOfAngles =
 		Number(angles[0].value) + Number(angles[1].value) + Number(angles[2].value);
-	console.log(sumOfAngles);
 	return sumOfAngles;
 }
 
