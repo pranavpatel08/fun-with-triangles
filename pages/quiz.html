@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Triangle🔺Quiz</title>
+		<link href="/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<nav>
+			<a href="/index.html">Is Triangle?</a>
+			<a href="/pages/quiz.html" class="item-active">Quiz</a>
+			<a href="#">Hypotenuse</a>
+			<a href="#">Area</a>
+		</nav>
+		<h1 class="heading">Triangle Quiz</h1>
+		<form class="container quiz-form">
+			<div class="quiz-container">
+				<p>
+					What is the third angle for the triangle where angle1 = 45° and angle2
+					= 45°?
+				</p>
+				<label>
+					<input required type="radio" name="options" value="45°" />
+					45°
+				</label>
+				<label>
+					<input required type="radio" name="options" value="60°" />
+					60°
+				</label>
+				<label>
+					<input required type="radio" name="options" value="90°" />
+					90°
+				</label>
+			</div>
+			<div class="quiz-container">
+				<p>If a triangle has an angle of 90 degrees, what is it called?</p>
+				<label>
+					<input required type="radio" name="option1" value="obtuse" />
+					obtuse
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="acute" />
+					acute
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="right angled" />
+					right angled
+				</label>
+			</div>
+            <div class="quiz-container">
+				<p>In an equilateral triangle, what is the sum of any two of its angles?</p>
+				<label>
+					<input required type="radio" name="option1" value="60°" />
+					60°
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="120°" />
+					120°
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="180°" />
+					180°
+				</label>
+			</div>
+            <div class="quiz-container">
+				<p>A scalene triangle has ___ lines of symmetry.</p>
+				<label>
+					<input required type="radio" name="option1" value="two" />
+					two
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="no" />
+					no
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="three" />
+					three
+				</label>
+			</div>
+            <div class="quiz-container">
+				<p>If a triangle has angles 125, 25, 30. What triangle is it?</p>
+				<label>
+					<input required type="radio" name="option1" value="obtuse" />
+					obtuse
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="acute" />
+					acute
+				</label>
+				<label>
+					<input required type="radio" name="option1" value="right angled" />
+					right angled
+				</label>
+			</div>
+			<button id="submit-btn" class="btn" type="submit">Submit Form</button>
+		</form>
+		<h2 class="output"></h2>
+		<script src="quiz.js"></script>
+	</body>
+</html>
