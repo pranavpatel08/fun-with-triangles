@@ -81,8 +81,8 @@ body {
 
 .formula {
 	text-align: center;
-	width: 90%;
-	margin: auto;
+	width: 450px;
+	margin: 2rem auto;
 	padding: 0.5rem;
 	border: 2px solid var(--primary-color);
     background-color: var(--background-tile);
@@ -107,7 +107,7 @@ a {
 	font-weight: bolder;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
 	.angle-container,
 	.container,
 	.formula {
