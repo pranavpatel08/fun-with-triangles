@@ -7,9 +7,15 @@ function calculateSumOfSquares(a, b) {
 }
 
 function calculateHypotenuse() {
-	const sumOfSquares = calculateSumOfSquares(sides[0].value, sides[1].value);
-	const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-	hypotenuseOutput.innerText = `The length of the hypotenuse is ${lengthOfHypotenuse} cm`;
+	if(Number(sides[0].value)<=0 || Number(sides[1].value)<=0){
+		hypotenuseOutput.innerText = `Enter valid input!`;
+	}
+	else {
+		const sumOfSquares = calculateSumOfSquares(sides[0].value, sides[1].value);
+		const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
+		hypotenuseOutput.innerText = `The length of the hypotenuse is ${lengthOfHypotenuse} cm`;
+	}
+	
 }
 
 hypotenuseBtn.addEventListener('click', calculateHypotenuse);
